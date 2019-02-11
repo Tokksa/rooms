@@ -1,0 +1,29 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -70px 0 0 0;
+
+  @media ($m-m) {
+
+    margin: -100px 0 0 0;
+
+  }
+}
+
+.grid__c {
+  width: 100%;
+  padding: 70px 80px 0 0;
+
+  &--s-1-2 {
+    width: 100%
+  }
+
+  @media ($m-m) {
+
+    padding: 100px 80px 0 0;
+
+    &--s-1-2 {
+      width: 50%
+    }
+  }
+}

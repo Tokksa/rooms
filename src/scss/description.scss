@@ -1,0 +1,23 @@
+.description {
+  padding: 0 0 40px 21px;
+
+  &--nopd {
+    padding: 0 0 40px 21px;
+  }
+
+  @media ($m-s) {
+    padding: 45px 0 140px 77px;
+
+    &--nopd {
+      padding: 45px 0 90px 364px;
+    }
+  }
+
+  @media ($m-m) {
+    padding: 170px 0 429px 200px;
+
+    &--nopd {
+      padding: 170px 0 323px 200px;
+    }
+  }
+}

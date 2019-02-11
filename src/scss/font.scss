@@ -1,0 +1,153 @@
+.font-title {
+  position: relative;
+  padding-left: 21px;
+  padding-bottom: 18px;
+
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 20px;
+
+  color: #333333;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    top: 32%;
+    right: calc(100% + -15px);
+    transform: translate(0, -50%);
+    background-color: #333333;
+    opacity: .5;
+  } 
+
+  &::after {
+    content: attr(data-id);
+    position: absolute;
+    right: calc(100% + 0px);
+  }
+
+  @media ($m-s) {
+    padding-left: 80px;
+    font-size: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      top: 32%;
+      right: calc(100% + -65px);
+      transform: translate(0, -50%);
+      background-color: #333333;
+      opacity: .5;
+    } 
+  
+    &::after {
+      content: attr(data-id);
+      position: absolute;
+      right: calc(100% + -25px);
+    }
+  
+  }
+  
+  @media ($m-m) {
+    padding-left: 0;
+    font-size: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      top: 50%;
+      right: calc(100% + 20px);
+      transform: translate(0, -50%);
+      background-color: #333333;
+      opacity: .5;
+    } 
+  
+    &::after {
+      content: attr(data-id);
+      position: absolute;
+      right: calc(100% + 70px);
+    }
+  
+  }
+}
+
+.font__content {
+  margin-left: 21px;
+
+  @media ($m-s) {
+    margin-left: 77px;
+  }
+  
+  @media ($m-m) {
+    margin-left: 0;
+  }
+
+}
+
+.font__content-name {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.281em;
+  font-size: 32px;
+  text-transform: uppercase;
+
+  &--font-r {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.281em;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  @media ($m-s) {
+    line-height: 1.025em;
+    font-size: 40px;
+
+    &--font-r {
+      line-height: 1.025em;
+      font-size: 40px;
+    }
+  }
+}
+
+.font__content-tracing {
+  padding: 25px 0 40px 0;
+  
+  font-family: 'Oswald', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &>span {
+    text-transform: none;
+  }
+
+  &--font-r {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  @media ($m-s) {
+    padding: 40px 0 60px 0;
+    font-size: 24px;
+
+    &--font-r {
+      font-size: 24px;
+    }
+  }
+}
